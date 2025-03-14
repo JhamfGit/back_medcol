@@ -4,6 +4,6 @@ import { GestDocumentalService } from './gest_documental.service';
 
 @Module({
   controllers: [GestDocumentalController],
-  providers: [GestDocumentalService]
+  providers: [GestDocumentalService],
 })
 export class GestDocumentalModule {}

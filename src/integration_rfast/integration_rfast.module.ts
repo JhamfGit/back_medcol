@@ -4,6 +4,6 @@ import { IntegrationRfastService } from './integration_rfast.service';
 
 @Module({
   controllers: [IntegrationRfastController],
-  providers: [IntegrationRfastService]
+  providers: [IntegrationRfastService],
 })
 export class IntegrationRfastModule {}

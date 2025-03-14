@@ -4,6 +4,6 @@ import { AlertasService } from './alertas.service';
 
 @Module({
   controllers: [AlertasController],
-  providers: [AlertasService]
+  providers: [AlertasService],
 })
 export class AlertasModule {}
