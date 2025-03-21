@@ -11,6 +11,7 @@ import { AuthModule } from './auth/auth.module';
 import { ConnectionModule } from './connection/connection.module';
 import { ConfigModule } from './config/config.module';
 import { ReportsModule } from './reports/reports.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { ReportsModule } from './reports/reports.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: '2112',
+      password: '',
       database: 'medcol_db',
       autoLoadEntities: true,
       synchronize: true, // ⚠️ Solo en desarrollo
@@ -33,6 +34,7 @@ import { ReportsModule } from './reports/reports.module';
     ConnectionModule,
     ConfigModule,
     ReportsModule,
+    UsersModule,
   ],
   controllers: [AppController], // <-- Agrega el controlador
   providers: [AppService], // <-- Agrega el servicio
