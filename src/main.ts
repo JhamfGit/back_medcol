@@ -6,6 +6,9 @@ import * as express from 'express';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors({
+    origin: 'http://localhost:3001', // La URL donde corre tu Next.js
+  });  
   await app.listen(process.env.PORT ?? 3000);
 
   // Obtener rutas de manera segura

@@ -20,7 +20,7 @@ import { UsersModule } from './users/users.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: '',
+      password: 'Jhamf123Mic',
       database: 'medcol_db',
       autoLoadEntities: true,
       synchronize: true, // ⚠️ Solo en desarrollo

@@ -1,6 +1,5 @@
 
 {
-  "email": "admin",
+  "email": "admin_medcol",
   "password": "123456"
 }
-
