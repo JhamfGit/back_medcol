@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
-import { IntegrationRfastController } from './integration_rfast.controller';
-import { IntegrationRfastService } from './integration_rfast.service';
+import { HttpModule } from '@nestjs/axios';
+import { IntegracionRfastService } from './integration_rfast.service';
+import { IntegracionRfastController } from './integration_rfast.controller';
 
 @Module({
-  controllers: [IntegrationRfastController],
-  providers: [IntegrationRfastService],
+  imports: [HttpModule],
+  controllers: [IntegracionRfastController],
+  providers: [IntegracionRfastService],
 })
-export class IntegrationRfastModule {}
+export class IntegracionRfastModule {}
+

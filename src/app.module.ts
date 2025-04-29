@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller'; // <-- Importa el controlador
 import { AppService } from './app.service'; // <-- Importa el servicio
-import { IntegrationRfastModule } from './integration_rfast/integration_rfast.module';
+import { IntegracionRfastModule } from './integration_rfast/integration_rfast.module';
 import { GestDocumentalModule } from './gest_documental/gest_documental.module';
 import { ControlMedicamentosModule } from './control_medicamentos/control_medicamentos.module';
 import { AlertasModule } from './alertas/alertas.module';
@@ -25,7 +25,7 @@ import { UsersModule } from './users/users.module';
       autoLoadEntities: true,
       synchronize: true, // ⚠️ Solo en desarrollo
     }),
-    IntegrationRfastModule,
+    IntegracionRfastModule,
     GestDocumentalModule,
     ControlMedicamentosModule,
     AlertasModule,
