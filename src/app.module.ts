@@ -23,7 +23,7 @@ import { UsersModule } from './users/users.module';
       password: 'Jhamf123Mic',
       database: 'medcol_db',
       autoLoadEntities: true,
-      synchronize: true, // ⚠️ Solo en desarrollo
+      synchronize: false, // ⚠️ Solo en desarrollo
     }),
     IntegracionRfastModule,
     GestDocumentalModule,
